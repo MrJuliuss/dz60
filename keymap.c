@@ -1,6 +1,8 @@
 #include QMK_KEYBOARD_H
 #include "keymap_french.h"
 
+#define ____ KC_TRNS
+
 enum layers {
   LINUXWIN = 0,
   MAC,
@@ -60,27 +62,27 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [FN1] = LAYOUT_CUSTOM_60_ISO(
-        RESET, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_INSERT, KC_DELETE,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PGUP, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_HOME, KC_PGDOWN, KC_END
+        RESET, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, CLASSIC_LAYER_KEYCODE, MACOS_KEYCODE,
+        ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____,
+        ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____,
+        ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, KC_PGUP, ____,
+        ____, ____, ____, ____, ____, ____, KC_HOME, KC_PGDOWN, KC_END
     ),
 
     [FN2] = LAYOUT_CUSTOM_60_ISO(
-        KC_TRNS, KC_BRID, KC_BRIU, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, CLASSIC_LAYER_KEYCODE, MACOS_KEYCODE,
-        KC_TRNS, KC_VOLD, KC_AUDIO_MUTE, KC_VOLU, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_MPRV, KC_MPLY, KC_MNXT, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PGUP, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+        KC_PSCR, KC_F1, KC_F2, KC_F3, KC_F4, KC_F5, KC_F6, KC_F7, KC_F8, KC_F9, KC_F10, KC_F11, KC_F12, KC_INSERT, KC_DELETE,
+        ____, KC_VOLD, KC_AUDIO_MUTE, KC_VOLU, ____, ____, ____, ____, ____, ____, ____, ____, ____,
+        ____, KC_MPRV, KC_MPLY, KC_MNXT, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____,
+        ____, KC_BRID, KC_BRIU, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____,
+        ____, ____, ____, ____, ____, ____, ____, ____, ____
     ),
 
     [FN3] = LAYOUT_CUSTOM_60_ISO(
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS
+        ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____,
+        ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____,
+        ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____,
+        ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____,
+        ____, ____, ____, ____, ____, ____, ____, ____, ____
     )
 };
 
