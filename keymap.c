@@ -46,7 +46,7 @@ enum keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [LINUXWIN] = LAYOUT_CUSTOM_60_ISO(
-        KC_GESC, FR_AMPR, FR_EACU, FR_DQUO, FR_QUOT, FR_LPRN, FR_MINS, FR_EGRV, FR_UNDS, FR_CCED, FR_AGRV, FR_RPRN, FR_EQL, KC_INSERT, KC_BSPC,
+        QK_GESC, FR_AMPR, FR_EACU, FR_DQUO, FR_QUOT, FR_LPRN, FR_MINS, FR_EGRV, FR_UNDS, FR_CCED, FR_AGRV, FR_RPRN, FR_EQL, KC_INSERT, KC_BSPC,
         KC_TAB, FR_A, FR_Z, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, FR_CIRC, FR_DLR,
         LT(FN1, KC_CAPS_LOCK), FR_Q, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, FR_M, FR_UGRV, FR_ASTR, KC_ENT,
         KC_LSFT, FR_LABK, FR_W, KC_X, KC_C, KC_V, KC_B, KC_N, FR_COMM, FR_SCLN, FR_COLN, FR_EXLM, MO(FN3), KC_UP, KC_RSFT,
@@ -54,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [MAC] = LAYOUT_CUSTOM_60_ISO(
-        KC_GESC, FR_AMPR, FR_EACU, FR_DQUO, FR_QUOT, FR_LPRN, FR_MINS, FR_EGRV, FR_UNDS, FR_CCED, FR_AGRV, FR_RPRN, FR_EQL, KC_INSERT, KC_BSPC,
+        QK_GESC, FR_AMPR, FR_EACU, FR_DQUO, FR_QUOT, FR_LPRN, FR_MINS, FR_EGRV, FR_UNDS, FR_CCED, FR_AGRV, FR_RPRN, FR_EQL, KC_INSERT, KC_BSPC,
         KC_TAB, FR_A, FR_Z, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, FR_CIRC, FR_DLR,
         LT(FN1, KC_CAPS_LOCK), FR_Q, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, FR_M, FR_UGRV, FR_ASTR, KC_ENT,
         KC_LSFT, FR_LABK, FR_W, KC_X, KC_C, KC_V, KC_B, KC_N, FR_COMM, FR_SCLN, FR_COLN, FR_EXLM, MO(FN3), KC_UP, KC_RSFT,
@@ -62,11 +62,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [FN1] = LAYOUT_CUSTOM_60_ISO(
-        RESET, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, CLASSIC_LAYER_KEYCODE, MACOS_KEYCODE,
+        QK_REBOOT, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, CLASSIC_LAYER_KEYCODE, MACOS_KEYCODE,
         ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____,
         ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____,
         ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, ____, KC_PGUP, ____,
-        ____, ____, ____, ____, ____, ____, KC_HOME, KC_PGDOWN, KC_END
+        ____, ____, ____, ____, ____, ____, KC_HOME, KC_PGDN, KC_END
     ),
 
     [FN2] = LAYOUT_CUSTOM_60_ISO(
